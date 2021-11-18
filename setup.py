@@ -17,6 +17,7 @@ try :
 	os.system("echo finish installing graphviz and graphviz-doc")
 	os.system("sudo apt-get install -y mysql-server mysql-client")
 	os.system("sudo apt update && upgrade")
+	os.system("sudo apt-get install -y shodan")
 	os.system("echo finish installing mysql-client and mysql-server")
 	os.system("cd ~")
 	os.system("mkdir Tools")
@@ -25,7 +26,6 @@ try :
 	os.system("tar xzf XSB.tar.gz")
 	os.system("wget https://people.cs.ksu.edu/~xou/argus/software/mulval/mulval_1_1.tar.gz")
 	os.system("tar xzf mulval_1_1.tar.gz")
-	os.system("mv mulval Tools/")
 	os.system("mv XSB Tools/")
 	os.system("cd Tools/")
 
@@ -38,7 +38,7 @@ try :
 
 		export PATH=/home/**type your username**/Tools/XSB/bin:$PATH
 
-		export MULVALROOT=/home/**type your username**/Tools/mulval
+		export MULVALROOT=/home/**type your username**/mulval
 		export PATH=$MULVALROOT/bin:$MULVALROOT/utils:$PATH
 
 
