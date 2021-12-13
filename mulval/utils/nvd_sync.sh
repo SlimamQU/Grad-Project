@@ -43,8 +43,8 @@ i=2002
 
 year=`date +"%Y"`
 while [ $i -le $year ]; do
-      # wget  https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-${i}.json.gz
-      # gunzip -f nvdcve-1.1-${i}.json.gz
+      wget  https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-${i}.json.gz
+      gunzip -f nvdcve-1.1-${i}.json.gz
       i=`expr $i + 1`
 done
 cd ..
