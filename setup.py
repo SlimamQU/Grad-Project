@@ -29,6 +29,10 @@ try :
 ")
 	os.system("$ ./msfconsole")
 	os.system("msfdb init")
+	print("finish installing metasploit")
+	os.system("curl -o Nessus-8.15.0-Ubuntu1110_amd64.deb \"https://www.tenable.com/downloads/api/v1/public/pages/nessus/downloads/13050/download?i_agree_to_tenable_license_agreement=true
+&file_path=Nessus-8.15.0-Ubuntu1110_amd64.deb\"")
+	os.system("sudo apt install ./Nessus-8.15.0-Ubuntu1110_amd64.deb")
 
 	print("""
 
