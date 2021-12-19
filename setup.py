@@ -22,8 +22,7 @@ try :
 	os.system("cd Tools")
 	os.system("wget http://xsb.sourceforge.net/downloads/XSB.tar.gz")
 	os.system("tar xzf XSB.tar.gz")
-	os.system("wget https://people.cs.ksu.edu/~xou/argus/software/mulval/mulval_1_1.tar.gz")
-	os.system("tar xzf mulval_1_1.tar.gz")
+	os.system("git clone https://github.com/Sulaiman-SK/Grad-Project")
 	os.system("mv XSB Tools/")
 	os.system("cd Tools/")
 
